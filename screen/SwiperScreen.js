@@ -8,7 +8,8 @@ import React, { Component } from 'react';
 import {
     StyleSheet,
     Text,
-    View
+    View,
+    StatusBar
 } from 'react-native';
 
 import Swiper from 'react-native-swiper'
@@ -20,6 +21,12 @@ export default class SwiperScreen extends Component {
     }
     render() {
         return (
+        <View>
+            <StatusBar
+                backgroundColor="blue"
+                barStyle="light-content"
+                hidden={true}
+            />
             <Swiper
                 style={styles.wrapper}
                 loop={false}
@@ -37,6 +44,7 @@ export default class SwiperScreen extends Component {
                     <Text style={styles.text}>And simple</Text>
                 </View>
             </Swiper>
+        </View>
         );
     }
 }

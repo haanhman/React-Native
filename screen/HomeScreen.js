@@ -30,6 +30,14 @@ export default class HomeScreen extends Component {
                     onPress={() => navigate('SwiperScreen')}
                     title="Swiper Screen"
                 />
+                <Button
+                    onPress={() => navigate('SingerScreen')}
+                    title="Single Screen"
+                />
+                <Button
+                    onPress={() => navigate('ListViewEndReached')}
+                    title="ListViewEndReached"
+                />
             </View>
         );
     }
